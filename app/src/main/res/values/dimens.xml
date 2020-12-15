@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="image_splash_size">120dp</dimen>
+  <dimen name="app_margin_16dp">16dp</dimen>
+  <dimen name="app_margin_8dp">8dp</dimen>
+  <dimen name="app_margin_64dp">64dp</dimen>
+  <dimen name="app_margin_32dp">32dp</dimen>
+  <dimen name="app_normal_text">16sp</dimen>
+  <dimen name="app_large_text">24sp</dimen>
+  <dimen name="card_corner_radius_10">6dp</dimen>
+  <dimen name="card_corner_radius_6">6dp</dimen>
+  <dimen name="card_elevation">10dp</dimen>
+</resources>

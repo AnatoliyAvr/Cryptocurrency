@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/navigation_graph"
+  app:startDestination="@id/listCurrenciesFragment">
+  <fragment
+    android:id="@+id/listCurrenciesFragment"
+    android:name="by.tolikavre.cryptocurrency.ui.list.ListCurrenciesFragment"
+    android:label="@string/title"
+    tools:layout="@layout/list_currencies_fragment" >
+    <action
+      android:id="@+id/action_listCurrenciesFragment_to_detailsCurrenciesFragment"
+      app:destination="@id/detailsCurrenciesFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/cryptocurrencyConverterFragment"
+    android:name="by.tolikavre.cryptocurrency.ui.converter.CryptocurrencyConverterFragment"
+    android:label="@string/cryptocurrency_converter"
+    tools:layout="@layout/cryptocurrency_converter_fragment" />
+  <fragment
+    android:id="@+id/detailsCurrenciesFragment"
+    android:name="by.tolikavre.cryptocurrency.ui.details.DetailsCurrenciesFragment"
+    android:label="@string/details"
+    tools:layout="@layout/details_currencies_fragment">
+    <action
+      android:id="@+id/action_detailsCurrenciesFragment_to_listCurrenciesFragment"
+      app:destination="@id/listCurrenciesFragment" />
+  </fragment>
+</navigation>
